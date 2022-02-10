@@ -1,13 +1,7 @@
-import {LOGIN, LOGOUT, FETCHPASSWORD,SHOW,UNSHOW,LOAD,UNLOAD, FETCHDETAIL} from '../store/actionType'
+import {GETDATA} from '../store/actionType'
 
-
-export const show = () => ({type:SHOW})
-export const unshow = () => ({type:UNSHOW})
-export const login = () => ({type:LOGIN})
-export const logout = () => ({type:LOGOUT})
-export const load = () => ({type:LOAD})
-export const unload = () => ({type: UNLOAD})
-export const fetchPassword = (data) =>  ({type:FETCHPASSWORD, data})
+// export const fetchPassword = (data) =>  ({type:FETCHPASSWORD, data})
+export const getData = (data) => ({type: GETDATA, data})
 
 
 // export const deleteOnePass = (id) => dispatch => {
@@ -22,3 +16,9 @@ export const fetchPassword = (data) =>  ({type:FETCHPASSWORD, data})
 //         toast.error(error)
 //     });
 // }
+export const fetchData =  () => async (dispatch) => {
+    const response = await fetch('https://virtserver.swaggerhub.com/hqms/FDN-WP/0.1/wp')
+    const data = await response.json()
+    dispatch(getData(data))
+
+}

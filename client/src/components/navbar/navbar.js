@@ -86,7 +86,7 @@ margin-left: 15px;
 
 const NavText = styled.div`
 font-weight: 800;
-margin-right:5px;
+margin-right:10px;
 font-size:12px;
 `
 
