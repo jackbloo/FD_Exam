@@ -17,14 +17,14 @@ export default function EditorCard({data, isEditor}) {
             </TextContainer>
             </TopCard> :<></>}
             <BottomCard>
-                <ContentImage src={data.product.image}></ContentImage>
+                <ContentImage src={'https://static.femaledaily.com/dyn/480/images/prod-pics/product_1525323944_Tonymoly_D_800x800.jpg'}></ContentImage>
                 <RatingContainer>
                 <LeftRatingContainer>
                     {data.product.rating}
                 </LeftRatingContainer>
                 <RightRatingContainer>
                     <StarsContainer>
-                    {stars.map((el,i) => <Star id={i} active={i <=rating} className="fa fa-star icon"/> )}
+                    {stars.map((el,i) => <Star key={i} active={i <=rating} className="fa fa-star icon"/> )}
                     </StarsContainer>
                     (7)
                 </RightRatingContainer>
@@ -46,6 +46,7 @@ const Card = styled.div`
 width: 200px;
 height: 300px;
 margin-right: 40px;
+background-color:white;
 `
 const TopCard = styled.div`
 display:flex;
@@ -58,7 +59,7 @@ margin-bottom: 5px;
 
 const BottomCard = styled.div`
 border: 2px solid #EFEFEF;
-width: 100%;
+width: 99%;
 height:100%;
 border-radius: 5px;
 display:flex;

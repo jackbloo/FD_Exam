@@ -56,7 +56,7 @@ flex-direction: column;
 align-items: flex-start;
 width: 30%;
 margin-right: 20px;
-margin-top: 50px;
+margin-top: 25px;
 text-align:left;
 `
 const RightContainer = styled.div`

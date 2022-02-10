@@ -5,7 +5,10 @@ import Navbar from '../../components/navbar/navbar';
 import Billboard from '../billboard/billboard';
 import EditorChoice from '../editorChoice/editorChoice';
 import PinkContainer from '../PinkContainer/pinkContainer';
+import LatestArticles from '../latestArticles/latestArticles';
+import LatestReview from '../latestReview/latestReview';
 import {fetchData} from '../../store/action'
+
 
 
 
@@ -22,6 +25,8 @@ function Home() {
       <EditorChoice/>
       <PinkContainer/>
       <Billboard internal={true}/>
+      <LatestArticles />
+      <LatestReview />
     </HomeContainer>
   );
 }
