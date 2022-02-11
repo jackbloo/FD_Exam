@@ -1,53 +1,46 @@
 import React from 'react';
 import {useSelector} from 'react-redux'
 import styled from 'styled-components';
-import ReviewCards from '../../components/reviewCards/reviewCards';
-import Pagination from '../../components/pagination/pagination';
+import PopularCard from '../../components/popularCard/popularCard';
 
-export default function LatestReview() {
-    const data = useSelector((state) => state.latestReview)
+
+export default function PopularGroups() {
+    const data = useSelector((state) => state.editorChoice)
   return (
-    <Container>  
-    <ReviewContainer>
+    <Container>
+    <PopularContainer>
     <TopContainer>
-    <Title>Latest Reviews</Title>
-    <Description>So you can make better purchase decision</Description>
+    <Title>Popular Groups</Title>
+    <Description>Where the beauty TALK are</Description>
     <RightContent>
         <Text>See More</Text>
         <RightArrow className="fa fa-arrow-right icon"></RightArrow>
     </RightContent>
     </TopContainer>
     <BottomContainer>
-    {data.length > 0 ? data.slice(0,2).map((el,i) => {
+    {data.length > 0 ? data.map((el,i) => {
     return(
-        <ReviewCards data={el} key={i} number={i}/>
+        <PopularCard data={el} key={i} number={i}/>
     )
     })
     
     :<></>}
     </BottomContainer>
-    <Pagination />
-</ReviewContainer>
-<BillboardContainer>
-    <BillboardContent>
-        <div>MR2</div>
-        300X250
-    </BillboardContent>
-</BillboardContainer>
-</Container> 
+</PopularContainer>
+</Container>
 
   );
 }
-
 const Container = styled.div`
 display:flex;
-flex-direction:row;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-width: 95%;
+width: 100%;
+margin-top: 40px;
 `
-const ReviewContainer = styled.div`
-width:51%;
+const PopularContainer = styled.div`
+width:78%;
 display:flex;
 flex-direction: column;
 align-items: center;
@@ -67,7 +60,6 @@ flex-direction: row;
 align-items: flex-start;
 width: 90%;
 margin-top: 20px;
-flex-wrap: wrap;
 
 `
 
@@ -84,7 +76,7 @@ const RightContent = styled.div`
 display:flex;
 justify-content: flex-end;
 align-items:center;
-width:85%;
+width:96%;
 `
 const Text = styled.div`
 color:#DB284E;
@@ -92,24 +84,6 @@ font-weight:bold;
 margin-right: 20px;
 `
 
-const BillboardContainer = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-font-size: 20px;
-color:#5A5A5A;
-`
-
-const BillboardContent = styled.div`
-width: 300px;
-height: 250px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-background-color:#D8D8D8;
-border: 1px solid #9D9D9D;
-`
 const RightArrow = styled.i`
 color:#DB284E;
 height: 12px;

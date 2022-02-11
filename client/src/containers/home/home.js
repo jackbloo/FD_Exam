@@ -7,8 +7,11 @@ import EditorChoice from '../editorChoice/editorChoice';
 import PinkContainer from '../PinkContainer/pinkContainer';
 import LatestArticles from '../latestArticles/latestArticles';
 import LatestReview from '../latestReview/latestReview';
+import PopularGroups from '../popularGroups/popularGroups';
+import Trending from '../trending/trending';
+import TopBrands from '../topBrands/topBrands';
+import Footers from '../footers/footers';
 import {fetchData} from '../../store/action'
-
 
 
 
@@ -16,7 +19,7 @@ function Home() {
     const dispatch = useDispatch()
     React.useEffect(() => {
         dispatch(fetchData())
-    },[])
+    },[dispatch])
 
   return (
     <HomeContainer >
@@ -27,6 +30,10 @@ function Home() {
       <Billboard internal={true}/>
       <LatestArticles />
       <LatestReview />
+      <PopularGroups/>
+      <Trending/>
+      <TopBrands/>
+      <Footers/>
     </HomeContainer>
   );
 }

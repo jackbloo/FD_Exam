@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export default function ReviewCards({data}) {
+export default function ReviewCards({data, number}) {
    const stars = ['','','','',''] 
    const rating = Math.floor(data.star) - 1
   return (
@@ -34,7 +34,7 @@ export default function ReviewCards({data}) {
             </TopCard>
             <BottomCard>
             <PhotoContainer>
-            <Circle src={process.env.PUBLIC_URL + '/assets/dummy.png'}></Circle>
+            <Circle src={process.env.PUBLIC_URL + `/assets/${number+1}.png`}></Circle>
             </PhotoContainer>
             <TextContainer> 
             <NameText >{data.user.charAt(0).toUpperCase() + data.user.slice(1)}</NameText> 
@@ -100,7 +100,8 @@ width: 50px;
 border-radius: 50%;
 position: absolute;
 bottom: -30px;
-object-fit:cover ;
+object-fit:cover;
+border: 2px solid #EFEFEF;
 `
 const ContentImage = styled.img`
 height: 80px;

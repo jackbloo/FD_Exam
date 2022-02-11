@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export default function EditorCard({data, isEditor}) {
+export default function EditorCard({data, isEditor, number}) {
    const stars = ['','','','',''] 
    const rating = Math.floor(data.product.rating) - 1
   return (
         <Card >
             {isEditor ?            <TopCard>
             <PhotoContainer>
-            <Circle src={process.env.PUBLIC_URL + '/assets/dummy.png'}></Circle>
+            <Circle src={process.env.PUBLIC_URL + `/assets/${number+1}.png`}></Circle>
             </PhotoContainer>
             <TextContainer> 
             <NameText>{data.editor.charAt(0).toUpperCase() + data.editor.slice(1)}</NameText> 
@@ -98,6 +98,7 @@ border-radius: 50%;
 position: absolute;
 bottom: -30px;
 object-fit:cover ;
+border: 2px solid #EFEFEF;
 `
 const ContentImage = styled.img`
 height: 150px;
@@ -113,7 +114,7 @@ width:100%;
 flex-direction:row;
 align-items: center;
 justify-content:flex-start;
-margin-top: 5px;
+margin-top: 20px;
 margin-left: 25px;
 
 `
@@ -155,12 +156,14 @@ margin-left: 15px;
 const TitleDescription = styled.div`
 font-weight: bold;
 font-size:17px;
+margin-top: 10px;
 `
 
 const ContentDescription = styled.div`
-font-size:15px;
+font-size:12px;
 width: 90%;
 display: -webkit-box;
 -webkit-line-clamp: 3;
 -webkit-box-orient: vertical; 
+margin-top: 10px;
 `
