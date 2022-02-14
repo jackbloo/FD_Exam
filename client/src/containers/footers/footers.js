@@ -14,7 +14,7 @@ const data = useSelector((state) => state.linkData)
             </LeftTopContainer>
             <LeftBottomContainer>
                 <LogoImage src={process.env.PUBLIC_URL + '/assets/logo.png'} />
-                <Description>Copyright © 205 - 2017 Female Daily Network - All Right reserved</Description>
+                <Description>Copyright © 205 - 2017 Female Daily Network • All Rights reserved</Description>
             </LeftBottomContainer>
         </LeftContainer>
         <RightContainer>
