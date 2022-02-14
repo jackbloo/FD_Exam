@@ -33,7 +33,7 @@ const data = useSelector((state) => state.linkData)
     </FootersContainer>
     <BillboardContainer>
         <Billboard>
-            Bottom Frame 970x50, 480z60,320x50
+            Bottom Frame 970x50, 480x60,320x50
         </Billboard>
     </BillboardContainer>
     </Container>
