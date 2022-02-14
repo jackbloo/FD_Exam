@@ -6,7 +6,7 @@ import Home from './containers/home/home';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
         <Home/>
     </div>
   );

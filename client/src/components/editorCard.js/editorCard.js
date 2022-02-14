@@ -6,20 +6,20 @@ export default function EditorCard({data, isEditor, number}) {
    const stars = ['','','','',''] 
    const rating = Math.floor(data.product.rating) - 1
   return (
-        <Card >
+        <Card data-testid="editor-card">
             {isEditor ?            <TopCard>
             <PhotoContainer>
             <Circle src={process.env.PUBLIC_URL + `/assets/${number+1}.png`}></Circle>
             </PhotoContainer>
             <TextContainer> 
-            <NameText>{data.editor.charAt(0).toUpperCase() + data.editor.slice(1)}</NameText> 
-            <RoleText>{data.role}</RoleText> 
+            <NameText data-testid="editor-editor">{data.editor.charAt(0).toUpperCase() + data.editor.slice(1)}</NameText> 
+            <RoleText data-testid="editor-role">{data.role}</RoleText> 
             </TextContainer>
             </TopCard> :<></>}
             <BottomCard>
-                <ContentImage src={'https://static.femaledaily.com/dyn/480/images/prod-pics/product_1525323944_Tonymoly_D_800x800.jpg'}></ContentImage>
+                <ContentImage data-testid="editor-image" src={'https://static.femaledaily.com/dyn/480/images/prod-pics/product_1525323944_Tonymoly_D_800x800.jpg'}></ContentImage>
                 <RatingContainer>
-                <LeftRatingContainer>
+                <LeftRatingContainer data-testid="editor-rating">
                     {data.product.rating}
                 </LeftRatingContainer>
                 <RightRatingContainer>
@@ -30,10 +30,10 @@ export default function EditorCard({data, isEditor, number}) {
                 </RightRatingContainer>
                 </RatingContainer>
                 <DescriptionContainer>
-                    <TitleDescription>
+                    <TitleDescription data-testid="editor-name">
                         {data.product.name}
                     </TitleDescription>
-                    <ContentDescription>
+                    <ContentDescription data-testid="editor-description">
                         {data.product.description}
                     </ContentDescription>
                 </DescriptionContainer>

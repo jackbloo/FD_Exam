@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Testing of Pagination Should Render Pagination match snapshot 1`] = `
+<div
+  class="sc-gsDKAQ hHEjbl"
+  data-testid="pagination-container"
+>
+  <i
+    class="sc-bdvvtL dAuLEb fa fa-arrow-left icon"
+    data-testid="pagination-right-arrow"
+  />
+  <i
+    class="sc-dkPtRN dhERQJ fa fa-circle icon"
+    data-testid="pagination-dots-0"
+  />
+  <i
+    class="sc-dkPtRN djnuNB fa fa-circle icon"
+    data-testid="pagination-dots-1"
+  />
+  <i
+    class="sc-dkPtRN djnuNB fa fa-circle icon"
+    data-testid="pagination-dots-2"
+  />
+  <i
+    class="sc-bdvvtL dAuLEb fa fa-arrow-right icon"
+    data-testid="pagination-left-arrow"
+  />
+</div>
+`;

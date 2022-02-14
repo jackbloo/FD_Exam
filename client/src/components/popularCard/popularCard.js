@@ -5,30 +5,30 @@ import styled from 'styled-components';
 export default function PopularCard({data,number}) {
 
   return (
-        <Card >
+        <Card data-testid="popular-card">
             <BottomCard>
-                <ContentImage src={process.env.PUBLIC_URL + `/assets/${number+1}.png`}></ContentImage>
+                <ContentImage data-testid="popular-image" src={process.env.PUBLIC_URL + `/assets/${number+1}.png`}></ContentImage>
                 <NameContainer>
-                    <TitleDescription>
+                    <TitleDescription data-testid="popular-title">
                         Embrace the Curl
                     </TitleDescription>
                 </NameContainer>
                 <BottomContainer>
                     <FollowersContainer>
-                    <Box>
+                    <Box data-testid="popular-user">
                     <Icon className="fa fa-user icon"/> 
                      -
                     </Box>
-                    <Box>
+                    <Box data-testid="popular-list">
                     <Icon className="fa fa-list icon"/> 
                      -
                     </Box>
-                    <Box>
+                    <Box data-testid="popular-comment">
                     <Icon className="fa fa-comment icon"/> 
                     -
                     </Box>
                     </FollowersContainer>
-                <ContentDescription>
+                <ContentDescription data-testid="popular-description">
                        May our curls pop and never stop!
                     </ContentDescription>
                 </BottomContainer>

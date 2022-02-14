@@ -8,21 +8,21 @@ export default function Navbar() {
 
     }
   return (
-    <NavbarContainer >
+    <NavbarContainer data-testid="navbar-container">
         <TopNavbar>
             <LeftNavbar>
-            <BurgerBar src={process.env.PUBLIC_URL + '/assets/burger-bar.png'}>
+            <BurgerBar data-testid="navbar-burgerbar" src={process.env.PUBLIC_URL + '/assets/burger-bar.png'}>
                 </BurgerBar>
-                <FDLogo src={process.env.PUBLIC_URL + '/assets/logo.png'}>
+                <FDLogo data-testid="navbar-fdlogo" src={process.env.PUBLIC_URL + '/assets/logo.png'}>
                 </FDLogo>
             </LeftNavbar>
             <MiddleNavbar>
-                <SearchIcon className="fa fa-search icon"></SearchIcon>
-                 <SearchBar placeholder="Search products, articles, topics, brands, etc"></SearchBar>
+                <SearchIcon data-testid="navbar-search-icon" className="fa fa-search icon"></SearchIcon>
+                 <SearchBar data-testid="navbar-searchbar" placeholder="Search products, articles, topics, brands, etc"></SearchBar>
             </MiddleNavbar>
             <RightNavbar onClick={() => clickLogin()}>
                 <UserIcon className="fa fa-user icon"></UserIcon>
-                    <LoginText>
+                    <LoginText data-testid="navbar-login-signup">
                         LOGIN/SIGNUP
                     </LoginText>
             </RightNavbar>

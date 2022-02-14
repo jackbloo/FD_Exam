@@ -10,7 +10,7 @@ const data = useSelector((state) => state.linkData)
     <FootersContainer >
         <LeftContainer>
             <LeftTopContainer>
-                {data.map((el,i) => <Box>{el.id}</Box>)}
+                {data.map((el,i) => <Box key={`${el}-${i}`}>{el.id}</Box>)}
             </LeftTopContainer>
             <LeftBottomContainer>
                 <LogoImage src={process.env.PUBLIC_URL + '/assets/logo.png'} />

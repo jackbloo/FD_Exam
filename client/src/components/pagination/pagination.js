@@ -4,10 +4,10 @@ import styled from 'styled-components';
 export default function Pagination (){
     const dots = ['','',''] 
     return(
-        <PaginationContainer>
-        <RightArrow className="fa fa-arrow-left icon"/>
-        {dots.map((el,i) => <Dots active={i === 0} key={i} className="fa fa-circle icon"/> )}
-        <RightArrow className="fa fa-arrow-right icon"/>
+        <PaginationContainer data-testid="pagination-container">
+        <RightArrow data-testid="pagination-right-arrow" className="fa fa-arrow-left icon"/>
+        {dots.map((el,i) => <Dots active={i === 0}  data-testid={`pagination-dots-${i}`} key={i} className="fa fa-circle icon"/> )}
+        <RightArrow data-testid="pagination-left-arrow" className="fa fa-arrow-right icon"/>
         </PaginationContainer>
     )
 

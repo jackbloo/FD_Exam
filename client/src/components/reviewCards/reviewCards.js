@@ -6,15 +6,15 @@ export default function ReviewCards({data, number}) {
    const stars = ['','','','',''] 
    const rating = Math.floor(data.star) - 1
   return (
-        <Card >
+        <Card data-testid="review-card">
             <TopCard>
                 <TopWrapper>
-                <ContentImage src={data.product.image}></ContentImage>
+                <ContentImage data-testid="review-image" src={data.product.image}></ContentImage>
                 <DescriptionContainer>
-                    <TitleDescription>
+                    <TitleDescription data-testid="review-name">
                         {data.product.name}
                     </TitleDescription>
-                    <ContentDescription>
+                    <ContentDescription data-testid="review-description-product">
                         {data.product.desc}
                     </ContentDescription>
                 </DescriptionContainer>
@@ -27,7 +27,7 @@ export default function ReviewCards({data, number}) {
                 </RightRatingContainer>
                 </RatingContainer>
                 <>
-                    <Comments>{data.comment}</Comments>
+                    <Comments data-testid="review-comments">{data.comment}</Comments>
                     <ReadMore>Read More</ReadMore>
                     
                 </>
@@ -37,8 +37,8 @@ export default function ReviewCards({data, number}) {
             <Circle src={process.env.PUBLIC_URL + `/assets/${number+1}.png`}></Circle>
             </PhotoContainer>
             <TextContainer> 
-            <NameText >{data.user.charAt(0).toUpperCase() + data.user.slice(1)}</NameText> 
-            <DescText>{`Combination skin, ${data.profile[3]}`}</DescText> 
+            <NameText data-testid="review-user">{data.user.charAt(0).toUpperCase() + data.user.slice(1)}</NameText> 
+            <DescText data-testid="review-description">{`Combination skin, ${data.profile[3]}`}</DescText> 
             </TextContainer>
             </BottomCard>
         </Card>

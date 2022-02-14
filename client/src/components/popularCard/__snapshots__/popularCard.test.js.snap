@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Testing of PopularCard Should Render Card match snapshot 1`] = `
+<div
+  class="sc-bdvvtL fUOFOh"
+  data-testid="popular-card"
+>
+  <div
+    class="sc-gsDKAQ gjgvoN"
+  >
+    <img
+      class="sc-dkPtRN foWWYS"
+      data-testid="popular-image"
+      src="/assets/NaN.png"
+    />
+    <div
+      class="sc-hKwDye jiwCiS"
+    >
+      <div
+        class="sc-eCImPb gJyOyQ"
+        data-testid="popular-title"
+      >
+        Embrace the Curl
+      </div>
+    </div>
+    <div
+      class="sc-gKclnd beZVdp"
+    >
+      <div
+        class="sc-iCfMLu hQNmeK"
+      >
+        <div
+          class="sc-furwcr bDSHle"
+          data-testid="popular-user"
+        >
+          <i
+            class="sc-pVTFL cwLJSS fa fa-user icon"
+          />
+          -
+        </div>
+        <div
+          class="sc-furwcr bDSHle"
+          data-testid="popular-list"
+        >
+          <i
+            class="sc-pVTFL cwLJSS fa fa-list icon"
+          />
+          -
+        </div>
+        <div
+          class="sc-furwcr bDSHle"
+          data-testid="popular-comment"
+        >
+          <i
+            class="sc-pVTFL cwLJSS fa fa-comment icon"
+          />
+          -
+        </div>
+      </div>
+      <div
+        class="sc-jRQBWg SbPbW"
+        data-testid="popular-description"
+      >
+        May our curls pop and never stop!
+      </div>
+    </div>
+  </div>
+</div>
+`;

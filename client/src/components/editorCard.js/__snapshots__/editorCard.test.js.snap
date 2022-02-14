@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Testing of EditorCard Should Render Card match snapshot when editor is false 1`] = `
+<div
+  class="sc-bdvvtL fUOFOh"
+  data-testid="editor-card"
+>
+  <div
+    class="sc-dkPtRN gcoOsN"
+  >
+    <img
+      class="sc-furwcr bBKeGd"
+      data-testid="editor-image"
+      src="https://static.femaledaily.com/dyn/480/images/prod-pics/product_1525323944_Tonymoly_D_800x800.jpg"
+    />
+    <div
+      class="sc-pVTFL IcGFG"
+    >
+      <div
+        class="sc-jrQzAO jrErZU"
+        data-testid="editor-rating"
+      >
+        4.3
+      </div>
+      <div
+        class="sc-kDTinF MGmIF"
+      >
+        <div
+          class="sc-crHmcD hbDJWj"
+        >
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM gCAcpz fa fa-star icon"
+          />
+        </div>
+        (7)
+      </div>
+    </div>
+    <div
+      class="sc-egiyK lcmcFC"
+    >
+      <div
+        class="sc-bqiRlB gTpuPX"
+        data-testid="editor-name"
+      >
+        Test
+      </div>
+      <div
+        class="sc-ksdxgE cujrOH"
+        data-testid="editor-description"
+      >
+        test-1
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Unit Testing of EditorCard Should Render Card match snapshot when editor is true 1`] = `
+<div
+  class="sc-bdvvtL fUOFOh"
+  data-testid="editor-card"
+>
+  <div
+    class="sc-gsDKAQ chudgA"
+  >
+    <div
+      class="sc-gKclnd fqzGzL"
+    >
+      <img
+        class="sc-iCfMLu khgBkU"
+        src="/assets/NaN.png"
+      />
+    </div>
+    <div
+      class="sc-jRQBWg bJTKsk"
+    >
+      <div
+        class="sc-hKwDye farejx"
+        data-testid="editor-editor"
+      >
+        Test-1
+      </div>
+      <div
+        class="sc-eCImPb emHCaL"
+        data-testid="editor-role"
+      >
+        Director
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-dkPtRN gcoOsN"
+  >
+    <img
+      class="sc-furwcr bBKeGd"
+      data-testid="editor-image"
+      src="https://static.femaledaily.com/dyn/480/images/prod-pics/product_1525323944_Tonymoly_D_800x800.jpg"
+    />
+    <div
+      class="sc-pVTFL IcGFG"
+    >
+      <div
+        class="sc-jrQzAO jrErZU"
+        data-testid="editor-rating"
+      >
+        4.3
+      </div>
+      <div
+        class="sc-kDTinF MGmIF"
+      >
+        <div
+          class="sc-crHmcD hbDJWj"
+        >
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM ewJeOS fa fa-star icon"
+          />
+          <i
+            class="sc-iqseJM gCAcpz fa fa-star icon"
+          />
+        </div>
+        (7)
+      </div>
+    </div>
+    <div
+      class="sc-egiyK lcmcFC"
+    >
+      <div
+        class="sc-bqiRlB gTpuPX"
+        data-testid="editor-name"
+      >
+        Test
+      </div>
+      <div
+        class="sc-ksdxgE cujrOH"
+        data-testid="editor-description"
+      >
+        test-1
+      </div>
+    </div>
+  </div>
+</div>
+`;

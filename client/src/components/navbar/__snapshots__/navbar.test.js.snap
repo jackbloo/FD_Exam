@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Testng of Navbar Should Render Navbar match snapshot 1`] = `
+<div
+  class="sc-bdvvtL eXDUeH"
+  data-testid="navbar-container"
+>
+  <div
+    class="sc-gsDKAQ fEybuc"
+  >
+    <div
+      class="sc-hKwDye jpPtVJ"
+    >
+      <img
+        class="sc-furwcr IVlna"
+        data-testid="navbar-burgerbar"
+        src="/assets/burger-bar.png"
+      />
+      <img
+        class="sc-iCfMLu dWTIif"
+        data-testid="navbar-fdlogo"
+        src="/assets/logo.png"
+      />
+    </div>
+    <div
+      class="sc-eCImPb fGQdog"
+    >
+      <i
+        class="sc-jrQzAO cZEjhg fa fa-search icon"
+        data-testid="navbar-search-icon"
+      />
+      <input
+        class="sc-pVTFL hoXjtW"
+        data-testid="navbar-searchbar"
+        placeholder="Search products, articles, topics, brands, etc"
+      />
+    </div>
+    <div
+      class="sc-jRQBWg jpWkkf"
+    >
+      <i
+        class="sc-kDTinF cpjqwz fa fa-user icon"
+      />
+      <div
+        class="sc-iqseJM dcWleQ"
+        data-testid="navbar-login-signup"
+      >
+        LOGIN/SIGNUP
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-dkPtRN gmTEFR"
+  >
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      SKINCARE
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      MAKE UP
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      BODY
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      HAIR
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      FRAGRANCE
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      NAILS
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      TOOLS
+    </div>
+    <div
+      class="sc-gKclnd kIFiRD"
+    >
+      BRANDS
+    </div>
+  </div>
+</div>
+`;

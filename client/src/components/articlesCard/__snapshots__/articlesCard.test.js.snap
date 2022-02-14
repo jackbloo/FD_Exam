@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ArticlesCard Should Render Card match snapshot 1`] = `
+<div
+  class="sc-bdvvtL jBONVe"
+  data-testid="article-card"
+>
+  <img
+    class="sc-gsDKAQ bvZcFw"
+    data-testid="article-image"
+    src="131231.png"
+  />
+  <div
+    class="sc-dkPtRN jhxwTc"
+  >
+    <div
+      class="sc-hKwDye kJoaCL"
+      data-testid="article-title"
+    >
+      Test
+    </div>
+    <div
+      class="sc-eCImPb fccjuw"
+    >
+      <div
+        class="sc-jRQBWg enHBJw"
+        data-testid="article-username"
+      >
+        Test-1
+         
+      </div>
+      <div
+        class="sc-jRQBWg ducLRT"
+      >
+        |
+      </div>
+      <div
+        class="sc-jRQBWg ducLRT"
+        data-testid="article-published"
+      >
+        2 hours ago
+      </div>
+    </div>
+  </div>
+</div>
+`;

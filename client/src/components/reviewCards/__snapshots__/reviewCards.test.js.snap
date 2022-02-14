@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Testing of ReviewCard Should Render Card match snapshot 1`] = `
+<div
+  class="sc-bdvvtL cUcYXm"
+  data-testid="review-card"
+>
+  <div
+    class="sc-dkPtRN emJlw"
+  >
+    <div
+      class="sc-ksdxgE AsKOh"
+    >
+      <img
+        class="sc-furwcr flMcvf"
+        data-testid="review-image"
+      />
+      <div
+        class="sc-crHmcD crpHvu"
+      >
+        <div
+          class="sc-egiyK cksTTo"
+          data-testid="review-name"
+        >
+          Test
+        </div>
+        <div
+          class="sc-bqiRlB gAGPzQ"
+          data-testid="review-description-product"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-pVTFL fnsqDJ"
+    >
+      <div
+        class="sc-jrQzAO fFXmdK"
+      >
+        <div
+          class="sc-iqseJM jBbDTV"
+        >
+          <i
+            class="sc-kDTinF cFTyHc fa fa-star icon"
+          />
+          <i
+            class="sc-kDTinF cFTyHc fa fa-star icon"
+          />
+          <i
+            class="sc-kDTinF cFTyHc fa fa-star icon"
+          />
+          <i
+            class="sc-kDTinF cFTyHc fa fa-star icon"
+          />
+          <i
+            class="sc-kDTinF cFTyHc fa fa-star icon"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-hBUSln jXsEcT"
+      data-testid="review-comments"
+    >
+      Test-2w
+    </div>
+    <div
+      class="sc-fotOHu hbRtTa"
+    >
+      Read More
+    </div>
+  </div>
+  <div
+    class="sc-gsDKAQ fzOFFr"
+  >
+    <div
+      class="sc-gKclnd gMfVCB"
+    >
+      <img
+        class="sc-iCfMLu jmApPc"
+        src="/assets/NaN.png"
+      />
+    </div>
+    <div
+      class="sc-jRQBWg cvyqwW"
+    >
+      <div
+        class="sc-hKwDye farejx"
+        data-testid="review-user"
+      >
+        Test-1
+      </div>
+      <div
+        class="sc-eCImPb dbRBnC"
+        data-testid="review-description"
+      >
+        Combination skin, 19-27
+      </div>
+    </div>
+  </div>
+</div>
+`;

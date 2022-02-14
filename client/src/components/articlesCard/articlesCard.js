@@ -4,16 +4,16 @@ import styled from 'styled-components';
 
 export default function ArticlesCard({data}) {
   return (
-        <Card>
-                <ContentImage src={data.image}></ContentImage>
+        <Card data-testid="article-card">
+                <ContentImage src={data.image} data-testid="article-image"></ContentImage>
                 <DescriptionContainer>
-                    <TitleDescription>
+                    <TitleDescription data-testid="article-title">
                         {data.title}
                     </TitleDescription>
                     <ContentDescription>
-                    <Text username={true}>{data.author.charAt(0).toUpperCase() + data.author.slice(1)} </Text> 
+                    <Text username={true} data-testid="article-username">{data.author.charAt(0).toUpperCase() + data.author.slice(1)} </Text> 
                     <Text>|</Text> 
-                    <Text>{data.published_at}</Text> 
+                    <Text data-testid="article-published">{data.published_at}</Text> 
                     </ContentDescription>
                 </DescriptionContainer>
         </Card>
